@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - The Mishaking Group</title>
+    <meta name="description"
+        content="Privacy Policy for The Mishaking Group. We are committed to protecting your personal information and your right to privacy." />
+
+    <meta property="og:title" content="Privacy Policy - The Mishaking Group" />
+    <meta property="og:description"
+        content="Learn how The Mishaking Group collects, uses, and protects your personal data." />
+    <meta property="og:type" content="website" />
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        dark: '#0B0D10',
+                        'dark-card': '#1E1E20',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Inter Display', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script> -->
+
+    <style>
+        * {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .glow-button {
+            transition: all 0.3s ease;
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Additional styles for the privacy policy page content */
+        .privacy-content h2 {
+            font-size: 1.875rem;
+            /* 30px */
+            line-height: 2.25rem;
+            /* 36px */
+            font-weight: 700;
+            color: #3B82F6;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .privacy-content h3 {
+            font-size: 1.5rem;
+            /* 24px */
+            line-height: 2rem;
+            /* 32px */
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .privacy-content p {
+            color: rgb(156 163 175);
+            line-height: 1.625;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-content ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            color: rgb(156 163 175);
+            line-height: 1.625;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .privacy-content a {
+            color: #3B82F6;
+            text-decoration: none;
+        }
+
+        .privacy-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="../assets/logo-100.webp" alt="logo" class="w-10 h-10" />
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/#services"
+                        class="nav-link text-gray-300 hover:text-white transition">Services</a>
+                    <a href="/#results" class="nav-link text-gray-300 hover:text-white transition">Results</a>
+                    <a href="/#why-us" class="nav-link text-gray-300 hover:text-white transition">Why Us</a>
+                    <a href="/#contact"
+                        class="glow-button bg-primary text-white px-6 py-2 rounded-lg font-semibold">Get Free
+                        Audit</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 bg-dark-card z-50 shadow-2xl md:hidden">
+        <div class="p-6">
+            <button id="close-menu" class="absolute top-6 right-6 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="mt-12 flex flex-col space-y-6">
+                <a href="/#services"
+                    class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Services</a>
+                <a href="/#results"
+                    class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Results</a>
+                <a href="/#why-us"
+                    class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Why
+                    Us</a>
+                <a href="/#contact"
+                    class="mobile-nav-link bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center">Get
+                    Free
+                    Audit</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay" class="hidden fixed inset-0 bg-black/50 z-40 md:hidden"></div>
+
+    <main class="pt-32 pb-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-dark-card p-8 md:p-12 rounded-2xl border border-gray-800">
+                <div class="text-center mb-12">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4 font-display">
+                        Privacy <span class="text-primary">Policy</span>
+                    </h1>
+                    <p class="text-lg text-gray-400">Last updated: October 28, 2025</p>
+                </div>
+
+                <div class="privacy-content">
+                    <p>The Mishaking Group ("we," "us," or "our") is committed to protecting your personal information
+                        and your
+                        right to privacy. If you have any questions or concerns about this privacy policy, or our
+                        practices with
+                        regards to your personal information, please contact us.</p>
+                    <p>This privacy policy applies to all information collected through our website (such as
+                        themishakinggroup.com), and/or any related services, sales, marketing or events (we refer to
+                        them
+                        collectively in this privacy policy as the "Services").</p>
+
+                    <h2>1. What Information Do We Collect?</h2>
+                    <h3>Information you voluntarily provide to us</h3>
+                    <p>We collect personal information that you voluntarily provide to us when you express an interest
+                        in
+                        obtaining information about us or our products and Services, when you participate in activities
+                        on the
+                        Services, or otherwise when you contact us.</p>
+                    <p>The personal information that we collect depends on the context of your interactions with us and
+                        the
+                        Services, the choices you make, and the products and features you use. The personal information
+                        we collect
+                        may include the following:</p>
+                    <ul>
+                        <li><strong>Personal Information:</strong> Name, email address, and website URL.</li>
+                    </ul>
+
+                    <h3>Information automatically collected</h3>
+                    <p>We may automatically collect certain information when you visit, use, or navigate the Services.
+                        This
+                        information does not reveal your specific identity (like your name or contact information) but
+                        may include
+                        device and usage information, such as your IP address, browser and device characteristics,
+                        operating
+                        system, language preferences, referring URLs, device name, country, location, and other
+                        technical
+                        information. This information is primarily needed to maintain the security and operation of our
+                        Services,
+                        and for our internal analytics and reporting purposes.</p>
+
+                    <h2>2. How Do We Use Your Information?</h2>
+                    <p>We use personal information collected via our Services for a variety of business purposes
+                        described below.
+                        We process your personal information for these purposes in reliance on our legitimate business
+                        interests, in
+                        order to enter into or perform a contract with you, with your consent, and/or for compliance
+                        with our legal
+                        obligations. We use the information we collect or receive:</p>
+                    <ul>
+                        <li><strong>To send you a free mini-report:</strong> To fulfill your request for a website audit
+                            or report.
+                        </li>
+                        <li><strong>To respond to user inquiries/offer support to users:</strong> We may use your
+                            information to
+                            respond to your inquiries and solve any potential issues you might have with the use of our
+                            Services.
+                        </li>
+                        <li><strong>To send administrative information to you:</strong> We may use your personal
+                            information to send
+                            you product, service, and new feature information and/or information about changes to our
+                            terms,
+                            conditions, and policies.</li>
+                        <li><strong>For other business purposes:</strong> We may use your information for other business
+                            purposes,
+                            such as data analysis, identifying usage trends, determining the effectiveness of our
+                            promotional
+                            campaigns, and to evaluate and improve our Services, products, marketing, and your
+                            experience.</li>
+                    </ul>
+
+                    <h2>3. Will Your Information Be Shared With Anyone?</h2>
+                    <p>We only share information with your consent, to comply with laws, to provide you with services,
+                        to protect
+                        your rights, or to fulfill business obligations. We do not sell, rent, or trade any of your
+                        personal
+                        information to any third party for their marketing purposes.</p>
+
+                    <h2>4. How Do We Keep Your Information Safe?</h2>
+                    <p>We have implemented appropriate technical and organizational security measures designed to
+                        protect the
+                        security of any personal information we process. However, despite our safeguards and efforts to
+                        secure your
+                        information, no electronic transmission over the Internet or information storage technology can
+                        be
+                        guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or
+                        other
+                        unauthorized third parties will not be able to defeat our security and improperly collect,
+                        access, steal,
+                        or modify your information.
+                    </p>
+
+                    <h2>5. How Long Do We Keep Your Information?</h2>
+                    <p>We will only keep your personal information for as long as it is necessary for the purposes set
+                        out in this
+                        privacy policy, unless a longer retention period is required or permitted by law (such as tax,
+                        accounting,
+                        or other legal requirements).</p>
+
+                    <h2>6. What Are Your Privacy Rights?</h2>
+                    <p>You have certain rights under applicable data protection laws. These may include the right (i) to
+                        request
+                        access and obtain a copy of your personal information, (ii) to request rectification or erasure;
+                        (iii) to
+                        restrict the processing of your personal information; and (iv) if applicable, to data
+                        portability. In
+                        certain circumstances, you may also have the right to object to the processing of your personal
+                        information.
+                        To make such a request, please use the contact details provided below.</p>
+
+                    <h2>7. Do We Make Updates to This Policy?</h2>
+                    <p>We may update this privacy policy from time to time. The updated version will be indicated by an
+                        updated
+                        "Last updated" date and the updated version will be effective as soon as it is accessible. We
+                        encourage you
+                        to review this privacy policy frequently to be informed of how we are protecting your
+                        information.</p>
+
+                    <h2>8. How Can You Contact Us About This Policy?</h2>
+                    <p>If you have questions or comments about this policy, you may contact us by using the form on our
+                        <a href="index.html#contact">contact page</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark-card border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                    <img src="../assets/logo-100.webp" alt="logo" class="w-8 h-8" />
+                    <span class="text-xl font-bold">The Mishaking Group</span>
+                </div>
+
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="./terms.html" class="text-gray-400 hover:text-white transition">Terms</a>
+                    <a href="#" class="text-white hover:text-white transition">Privacy</a>
+                    <a href="/#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 text-gray-500 text-sm">
+                &copy; 2025 The Mishaking Group. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            mobileOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMenu.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                closeMobileMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>

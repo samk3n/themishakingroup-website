@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - The Mishaking Group</title>
+    <meta name="description"
+        content="Terms of Service for The Mishaking Group. Please read these terms carefully before using our services." />
+
+    <meta property="og:title" content="Terms of Service - The Mishaking Group" />
+    <meta property="og:description"
+        content="Official Terms of Service governing the use of The Mishaking Group's website and services." />
+    <meta property="og:type" content="website" />
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        dark: '#0B0D10',
+                        'dark-card': '#1E1E20',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Inter Display', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script> -->
+
+    <style>
+        * {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .glow-button {
+            transition: all 0.3s ease;
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Styles for the legal content pages (Terms/Privacy) */
+        .legal-content h2 {
+            font-size: 1.875rem;
+            /* 30px */
+            line-height: 2.25rem;
+            /* 36px */
+            font-weight: 700;
+            color: #3B82F6;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .legal-content h3 {
+            font-size: 1.5rem;
+            /* 24px */
+            line-height: 2rem;
+            /* 32px */
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .legal-content p {
+            color: rgb(156 163 175);
+            line-height: 1.625;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            color: rgb(156 163 175);
+            line-height: 1.625;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .legal-content a {
+            color: #3B82F6;
+            text-decoration: none;
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="../assets/logo-100.webp" alt="logo" class="w-10 h-10" />
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/#services" class="nav-link text-gray-300 hover:text-white transition">Services</a>
+                    <a href="/#results" class="nav-link text-gray-300 hover:text-white transition">Results</a>
+                    <a href="/#why-us" class="nav-link text-gray-300 hover:text-white transition">Why Us</a>
+                    <a href="/#contact" class="glow-button bg-primary text-white px-6 py-2 rounded-lg font-semibold">Get
+                        Free
+                        Audit</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 bg-dark-card z-50 shadow-2xl md:hidden">
+        <div class="p-6">
+            <button id="close-menu" class="absolute top-6 right-6 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="mt-12 flex flex-col space-y-6">
+                <a href="/#services"
+                    class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Services</a>
+                <a href="/#results"
+                    class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Results</a>
+                <a href="/#why-us" class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Why
+                    Us</a>
+                <a href="/#contact"
+                    class="mobile-nav-link bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center">Get
+                    Free
+                    Audit</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay" class="hidden fixed inset-0 bg-black/50 z-40 md:hidden"></div>
+
+    <main class="pt-32 pb-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-dark-card p-8 md:p-12 rounded-2xl border border-gray-800">
+                <div class="text-center mb-12">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4 font-display">
+                        Terms of <span class="text-primary">Service</span>
+                    </h1>
+                    <p class="text-lg text-gray-400">Last updated: October 28, 2025</p>
+                </div>
+
+                <div class="legal-content">
+                    <p>Welcome to The Mishaking Group. These Terms of Service ("Terms") govern your use of our website
+                        and the
+                        services we provide. By accessing or using our services, you agree to be bound by these Terms.
+                    </p>
+
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By using the services provided by The Mishaking Group ("Company," "we," "us," or "our"), you
+                        agree to
+                        these Terms of Service. If you do not agree, you must not use our services. We may modify these
+                        Terms at
+                        any time, and such modification shall be effective immediately upon posting on our website.</p>
+
+                    <h2>2. Description of Services</h2>
+                    <p>We provide digital marketing services for Shopify stores, including but not limited to Search
+                        Engine
+                        Optimization (SEO), ad management, lead generation, and website design (the "Services"). All
+                        services are
+                        provided on an "as-is" and "as-available" basis.</p>
+
+                    <h2>3. Intellectual Property Rights</h2>
+                    <p>Unless otherwise indicated, the website and our Services are our proprietary property. All source
+                        code,
+                        databases, functionality, software, website designs, text, photographs, and graphics on the site
+                        (collectively, the "Content") and the trademarks and logos contained therein (the "Marks") are
+                        owned or
+                        controlled by us and are protected by copyright and trademark laws. The Content and the Marks
+                        are provided
+                        for your information and personal use only.</p>
+
+                    <h2>4. User Obligations</h2>
+                    <p>You agree to use our Services for lawful purposes only. You agree to provide accurate and
+                        complete
+                        information when requested. You are responsible for maintaining the confidentiality of any
+                        account
+                        information and are fully responsible for all activities that occur under your account.</p>
+
+                    <h2>5. Prohibited Activities</h2>
+                    <p>You may not access or use the website for any purpose other than that for which we make the
+                        website
+                        available. Prohibited activities include, but are not limited to:</p>
+                    <ul>
+                        <li>Systematically retrieving data or other content from the site to create a collection,
+                            compilation,
+                            database, or directory without written permission from us.</li>
+                        <li>Using the website to advertise or offer to sell goods and services not endorsed by us.</li>
+                        <li>Engaging in any automated use of the system, such as using scripts to send comments or
+                            messages.</li>
+                        <li>Interfering with, disrupting, or creating an undue burden on the website or the networks
+                            connected to
+                            the site.</li>
+                        <li>Attempting to impersonate another user or person.</li>
+                    </ul>
+
+                    <h2>6. Disclaimer of Warranties</h2>
+                    <p>We make no warranties, expressed or implied, regarding the services, including any warranties of
+                        merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee any
+                        specific
+                        results from the use of our services, such as increased traffic, sales, or search engine
+                        rankings.</p>
+
+                    <h2>7. Limitation of Liability</h2>
+                    <p>In no event will we or our directors, employees, or agents be liable to you or any third party
+                        for any
+                        direct, indirect, consequential, exemplary, incidental, special, or punitive damages, including
+                        lost
+                        profit, lost revenue, loss of data, or other damages arising from your use of the site or our
+                        services,
+                        even if we have been advised of the possibility of such damages.</p>
+
+                    <h2>8. Governing Law</h2>
+                    <p>These Terms shall be governed by and defined following the laws of the jurisdiction in which the
+                        Company is
+                        established, without regard to its conflict of law principles.
+                    </p>
+
+                    <h2>9. Contact Us</h2>
+                    <p>In order to resolve a complaint regarding the Services or to receive further information
+                        regarding use of
+                        the Services, please contact us through the form on our <a href="index.html#contact">contact
+                            page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark-card border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                    <img src="../assets/logo-100.webp" alt="logo" class="w-8 h-8" />
+                    <span class="text-xl font-bold">The Mishaking Group</span>
+                </div>
+
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-white hover:text-white transition">Terms</a>
+                    <a href="./privacy.html" class="text-gray-400 hover:text-white transition">Privacy</a>
+                    <a href="/#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 text-gray-500 text-sm">
+                &copy; 2025 The Mishaking Group. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            mobileOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMenu.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                closeMobileMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>

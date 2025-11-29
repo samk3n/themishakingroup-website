@@ -1,0 +1,1580 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mishakin Group - Get More Customers Before Black Friday Ends</title>
+    <meta name="description"
+        content="We help Shopify stores get visible, trusted, and booked through SEO, ads, and automated lead generation. Book your free audit today." />
+
+    <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:title" content="The Mishakin Group - Boost Your Sales">
+    <meta property="og:description"
+        content="We help Shopify stores get visible, trusted, and booked through SEO, ads, and automated lead generation. Book your free audit today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themishakingroup.com">
+    <meta property="og:image" content="https://themishakingroup.com/og_image.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:alt" content="The Mishakin Group banner showing growth and sales increase">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Mishakin Group - Boost Your Sales">
+    <meta name="twitter:description"
+        content="We help Shopify stores get visible, trusted, and booked through SEO, ads, and automated lead generation. Book your free audit today.">
+    <meta name="twitter:image" content="https://themishakingroup.com/og_image.webp">
+    <meta name="twitter:image:alt" content="The Mishakin Group banner showing growth and sales increase">
+    <!-- <meta name="twitter:site" content="@themishakingroup"> -->
+
+    <link rel="preload" as="image" href="./assets/hero-couple-still.webp" media="(orientation: landscape)">
+    <link rel="preload" as="image" href="./assets/hero-couple-vertical-still.webp" media="(orientation: portrait)">
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        dark: '#0B0D10',
+                        'dark-card': '#1E1E20',
+                    },
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'system-ui', 'sans-serif'],
+                        display: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script> -->
+
+    <style>
+        .glow-button {
+            transition: all 0.3s ease;
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0B0D10 0%, #1a1d24 50%, #0B0D10 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .fade-in,
+            .card-hover,
+            .glow-button,
+            .hero-gradient {
+                animation: none;
+                transition: none;
+            }
+        }
+
+        .testimonial {
+            display: none;
+            animation: fadeInOut 0.5s ease;
+        }
+
+        .testimonial.active {
+            display: block;
+        }
+
+        @keyframes fadeInOut {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #3B82F6;
+        }
+
+        .accordion-content {
+            /* Smooth transition for expanding/collapsing */
+            transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.open {
+            /* Animate to this state when open */
+            max-height: 500px;
+            /* Adjust if your content needs more space */
+            opacity: 1;
+        }
+
+        .arrow-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .arrow-icon.open {
+            transform: rotate(90deg);
+        }
+
+        .faq-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.3s ease-in;
+        }
+
+        .faq-content.open {
+            max-height: 200px;
+            /* Adjust if your answer content is longer */
+            opacity: 1;
+            transition: max-height 0.5s ease-in, opacity 0.4s ease-in;
+        }
+
+        .faq-icon.open {
+            transform: rotate(45deg);
+        }
+
+        /* Default (Mobile) Tab Styling - looks like an accordion header */
+        .service-tab {
+            background-color: #1E1E20;
+            /* dark-card */
+            border: 1px solid rgb(55 65 81);
+            /* border-gray-800 */
+            color: #ffffff;
+        }
+
+        /* Active State for Tabs (both mobile and desktop) */
+        .service-tab.active {
+            background-color: rgba(59, 130, 246, 0.1);
+            /* primary/10 */
+            color: #3B82F6;
+            /* primary */
+            border-color: rgba(59, 130, 246, 0.3);
+            /* primary/30 */
+        }
+
+        /* Panel Styling */
+        .service-panel {
+            display: none;
+            /* Hidden by default */
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .service-panel.active {
+            display: block;
+            /* Shown when active */
+        }
+
+        /* Mobile-only Accordion Behavior */
+        @media (max-width: 767px) {
+            .service-panel {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: max-height 0.4s ease-out, opacity 0.3s ease-in;
+                padding: 0 1rem;
+                /* Add padding for content when open */
+            }
+
+            .service-panel.active {
+                display: block;
+                /* Override default display:none */
+                max-height: 1000px;
+                /* Large enough for content */
+                opacity: 1;
+                padding: 1.5rem 1rem 1rem;
+                /* T, H, B */
+                border-bottom: 1px solid rgb(55 65 81);
+                border-left: 1px solid rgb(55 65 81);
+                border-right: 1px solid rgb(55 65 81);
+                margin-top: -0.5rem;
+                /* Connect to the tab above */
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+            }
+        }
+
+        /* Desktop-only Tab Styling */
+        @media (min-width: 768px) {
+            .service-tab {
+                background-color: transparent;
+                border: none;
+                border-left: 3px solid transparent;
+                border-radius: 0;
+            }
+
+            .service-tab.active {
+                background-color: rgba(59, 130, 246, 0.1);
+                border-left: 3px solid #3B82F6;
+                /* primary */
+            }
+
+            .service-tab:not(.active):hover {
+                background-color: #1E1E20;
+                /* dark-card */
+                color: #ffffff;
+            }
+        }
+
+        /* Simple fade-in animation for content */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden font-sans">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50   border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="./assets/logo-100.webp" alt="logo" class="w-10 h-10" />
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="nav-link text-gray-300 hover:text-white transition">Services</a>
+                    <a href="#results" class="nav-link text-gray-300 hover:text-white transition">Results</a>
+                    <a href="#why-us" class="nav-link text-gray-300 hover:text-white transition">Why Us</a>
+                    <a href="#contact" class="glow-button bg-primary text-white px-6 py-2 rounded-lg font-semibold">Get
+                        Free
+                        Audit</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 bg-dark-card z-50 shadow-2xl md:hidden">
+        <div class="p-6">
+            <button id="close-menu" class="absolute top-6 right-6 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="mt-12 flex flex-col space-y-6">
+                <a href="#services"
+                    class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Services</a>
+                <a href="#results" class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Results</a>
+                <a href="#why-us" class="mobile-nav-link text-gray-300 hover:text-white transition text-lg">Why Us</a>
+                <a href="#contact"
+                    class="mobile-nav-link bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center">Get
+                    Free
+                    Audit</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay" class="hidden fixed inset-0 bg-black/50 z-40 md:hidden"></div>
+
+    <section id="hero"
+        class="hero-gradient min-h-screen flex items-center justify-center pt-20 relative overflow-hidden z-30">
+
+        <video class="absolute top-0 left-0 w-full h-full object-cover hidden landscape:block z-2 lazy-video" muted loop
+            playsinline preload="none" poster="./assets/hero-couple-still.webp"
+            data-src="./assets/hero-couple-optimized.mp4">
+            <source data-src="./assets/hero-couple-optimized.mp4" type="video/mp4">
+        </video>
+
+        <!-- Landscape Fallback Image (visible immediately) -->
+        <img src="./assets/hero-couple-still.webp" alt="Background"
+            class="absolute top-0 left-0 w-full h-full object-cover landscape:block portrait:hidden z-1"
+            loading="eager">
+
+        <!-- Portrait Video -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover hidden portrait:block z-2 lazy-video" muted loop
+            playsinline preload="none" poster="./assets/hero-couple-vertical-still.webp"
+            data-src="./assets/hero-couple-vertical-optimized.mp4">
+            <source data-src="./assets/hero-couple-vertical-optimized.mp4" type="video/mp4">
+        </video>
+
+        <!-- Portrait Fallback Image -->
+        <img src="./assets/hero-couple-vertical-still.webp" alt="Background"
+            class="absolute top-0 left-0 w-full h-full object-cover portrait:block landscape:hidden z-1"
+            loading="eager">
+
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-10"></div>
+
+        <div class="absolute inset-0 opacity-90 z-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primary/50 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 py-10 lg:py-0 text-center relative z-20">
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="mb-6 inline-block px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-sm font-semibold text-primary">
+                    Only 3 client slots left this month
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 font-display">
+                    Struggling with <span class="text-primary">Low Shopify Sales?</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-gray-300 mb-4 font-display">
+                    We Bring You Customers — Before Black Friday Ends.
+                </p>
+
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                    We help small businesses get visible, trusted, and booked through SEO, reviews, and automated lead
+                    generation.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact"
+                        class="glow-button bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg w-full sm:w-auto">
+                        Get My Free Audit
+                    </a>
+                    <a href="#services"
+                        class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/10 transition w-full sm:w-auto">
+                        Our Growth Blueprint
+                    </a>
+                </div>
+
+                <div class="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+                    <div>
+                        <div class="text-4xl font-bold text-primary counter" data-target="150">0</div>
+                        <div class="text-sm text-gray-400 mt-2">Stores Helped</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-primary counter" data-target="37">0</div>
+                        <div class="text-sm text-gray-400 mt-2">% Avg Growth</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-primary counter" data-target="200">0</div>
+                        <div class="text-sm text-gray-400 mt-2">5-Star Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-dark relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">
+                    How We <span class="text-primary">Help You Grow</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Full-service solutions to increase your visibility, traffic, and sales.
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto md:grid md:grid-cols-3 md:gap-12">
+                <!-- Left Column: Service Tabs (Master) -->
+                <div id="service-tabs" class="md:col-span-1 flex flex-col space-y-2 mb-8 md:mb-0">
+                    <!-- Tab 1: SEO -->
+                    <button data-target="service-seo"
+                        class="service-tab active text-left p-4 rounded-lg font-semibold transition-all duration-300">
+                        SEO & Visibility Optimization
+                    </button>
+                    <!-- Tab 2: Ad Management -->
+                    <button data-target="service-ads"
+                        class="service-tab text-left p-4 rounded-lg font-semibold transition-all duration-300">
+                        Ad Management
+                    </button>
+                    <!-- Tab 3: Website Design -->
+                    <button data-target="service-web"
+                        class="service-tab text-left p-4 rounded-lg font-semibold transition-all duration-300">
+                        Website Design & Redesign
+                    </button>
+                </div>
+
+                <!-- Right Column: Service Content (Detail) -->
+                <div id="service-content" class="md:col-span-2 relative">
+                    <!-- Content 1: SEO -->
+                    <div id="service-seo" class="service-panel active">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">SEO & Visibility Optimization</h3>
+                        <p class="text-gray-400 mb-6">We make your business appear first on Google and AI searches.</p>
+                        <p class="text-gray-300 mb-4">Visibility is everything. We use cutting-edge SEO strategies
+                            to rank your website higher on search engines. Our approach covers technical SEO,
+                            high-quality
+                            content creation, and authority building to ensure you dominate the search results for your
+                            most important keywords.</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Comprehensive keyword research and analysis.</li>
+                            <li>On-page, off-page, and technical SEO audits.</li>
+                            <li>Content strategy for organic growth.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Content 2: Ad Management -->
+                    <div id="service-ads" class="service-panel">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Ad Management</h3>
+                        <p class="text-gray-400 mb-6">We manage your ad traffic and optimize for maximum impact.</p>
+                        <p class="text-gray-300 mb-4">Don't waste money on ads that don't convert. We design, launch,
+                            and
+                            manage data-driven ad campaigns on platforms like Google, Facebook, and LinkedIn. We
+                            continuously test and optimize to lower your cost-per-acquisition and maximize your return
+                            on
+                            investment.</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>A/B testing for ad creatives and copy.</li>
+                            <li>Audience targeting and retargeting.</li>
+                            <li>Performance tracking and detailed reporting.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Content 3: Website Design -->
+                    <div id="service-web" class="service-panel">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Website Design & Redesign</h3>
+                        <p class="text-gray-400 mb-6">We design or redesign your website to maximize sales.</p>
+                        <p class="text-gray-300 mb-4">Your website is your digital storefront. We build beautiful,
+                            responsive, and high-converting websites from the ground up. Whether you need a brand-new
+                            site
+                            or a refresh of your current one, we focus on user experience and conversion rate
+                            optimization
+                            to turn visitors into customers.</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Mobile-first and responsive design.</li>
+                            <li>Conversion-focused UI/UX design.</li>
+                            <li>Fast loading speeds and performance optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="py-24 bg-linear-to-b from-dark to-dark-card relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">
+                    Results That <span class="text-primary">Speak for Themselves</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Our clients consistently see measurable growth.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto mb-16">
+                <div
+                    class="bg-linear-to-b from-dark-card to-dark-card/30 p-8 md:p-12 rounded-2xl border border-gray-800 relative fade-in">
+                    <div class="text-sm text-primary font-semibold mb-4">TEAM REVIEWS</div>
+
+                    <div id="testimonial-container" class="min-h-[200px]">
+                        <div class="testimonial active">
+                            <p class="text-xl md:text-2xl text-gray-300 mb-6 italic">
+                                "Working with this team transformed our Shopify store. We went from 50 visitors a day to
+                                over 500, and
+                                our conversion rate doubled. The ROI has been incredible."
+                            </p>
+                            <div class="flex items-center">
+                                <div
+                                    class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                    <img src="./assets/luna-ash.webp" alt="logo" />
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Emma Calder</div>
+                                    <div class="text-sm text-gray-400">Founder, Luna & Ash</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="text-xl md:text-2xl text-gray-300 mb-6 italic">
+                                "Their SEO work got us to the top of Google in our niche within 3 months. Our organic
+                                traffic has grown
+                                300%. Simply outstanding results."
+                            </p>
+                            <div class="flex items-center">
+                                <div
+                                    class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                    <img src="./assets/velin.webp" alt="logo" />
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Sofia Mendes</div>
+                                    <div class="text-sm text-gray-400">Marketing Director, Velin Studios</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="text-xl md:text-2xl text-gray-300 mb-6 italic">
+                                "The lead generation system they built for us is a game-changer. We're now booking 10+
+                                strategy calls
+                                per week, consistently. Best investment we've made."
+                            </p>
+                            <div class="flex items-center">
+                                <div
+                                    class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                    <img src="./assets/homeharvest.webp" alt="logo" />
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Michael Tan</div>
+                                    <div class="text-sm text-gray-400">Co-Founder, HomeHarvest</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="text-xl md:text-2xl text-gray-300 mb-6 italic">
+                                "They completely redesigned our store and set up our ad campaigns. Sales increased 45%
+                                in the first
+                                month alone. Couldn't be happier with the partnership."
+                            </p>
+                            <div class="flex items-center">
+                                <div
+                                    class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                    <img src="./assets/peakgear.webp" alt="logo" />
+                                </div>
+                                <div>
+                                    <div class="font-semibold">James Whitmore</div>
+                                    <div class="text-sm text-gray-400">CEO, PeakGear Supply</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center mt-8 space-x-2">
+                        <button class="testimonial-dot w-2 h-2 rounded-full bg-primary" data-index="0"></button>
+                        <button class="testimonial-dot w-2 h-2 rounded-full bg-gray-600" data-index="1"></button>
+                        <button class="testimonial-dot w-2 h-2 rounded-full bg-gray-600" data-index="2"></button>
+                        <button class="testimonial-dot w-2 h-2 rounded-full bg-gray-600" data-index="3"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto fade-in">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-primary mb-2">+37%</div>
+                    <div class="text-gray-400">More booked calls on average</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-primary mb-2">200+</div>
+                    <div class="text-gray-400">5-star reviews managed this quarter</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">
+                    Choose Your <span class="text-primary">Sprint</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    One-time flat fees for measurable results. No hidden costs, no long-term contracts.
+                </p>
+            </div>
+
+            <!-- Featured Offer: Black Friday Ad Sprint -->
+            <div class="bg-dark-card border border-primary/30 rounded-2xl p-8 md:p-12 mb-16 fade-in">
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Left Column: The "Why" -->
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-3xl font-bold mb-3 font-display">🖤 Black Friday Ad Sprint</h3>
+                        <p class="text-4xl font-bold text-primary mb-4">$2,000 <span
+                                class="text-lg font-normal text-gray-400">Flat Fee</span></p>
+                        <p class="text-gray-300 mb-4 text-lg">Turn Black Friday traffic into real sales — fast.</p>
+                        <p class="text-gray-400 mb-4">
+                            Every year, thousands of businesses lose revenue because they start their campaigns too late
+                            or
+                            run ads that don’t convert. We fix that — fast.
+                        </p>
+                        <p class="text-gray-400">
+                            Our Black Friday Ad Sprint is a one-time, done-for-you campaign setup and management package
+                            built to help you maximize sales before the season ends.
+                        </p>
+                    </div>
+
+                    <!-- Right Column: The "What" -->
+                    <div class="bg-dark -mx-6 sm:mx-2 md:mx-0 p-4 md:p-8 rounded-xl border border-gray-800">
+                        <h4 class="text-2xl font-bold mb-4">⚡ What’s Included</h4>
+                        <p class="text-gray-400 mb-6">Everything you need for a high-performing campaign — done for you
+                            in
+                            3–5 days.</p>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong class="text-white">Ad Strategy & Offer Review:</strong> We analyze your
+                                    products and offers to craft a high-converting strategy.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong class="text-white">Ad Copy & Creative Setup:</strong> We build compelling
+                                    visuals and copy that drive clicks.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong class="text-white">Campaign Setup & Launch:</strong> We handle all
+                                    technical
+                                    setup on Facebook, Instagram, or Google Ads.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong class="text-white">Optimization & Monitoring (7 days):</strong> We track
+                                    and
+                                    tweak your campaign daily for performance.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong class="text-white">Final Report:</strong> You receive performance data and
+                                    next-step recommendations.</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-6 border-t border-gray-800">
+                            <p class="text-sm text-gray-500">🕒 <strong class="text-gray-400">Limited
+                                    Availability:</strong> Slots are limited to ensure quality. This offer closes once
+                                full.</p>
+                            <p class="text-sm text-gray-500 mt-2">💰 Ad spend not included. You keep full control of
+                                your
+                                budget.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Sprints -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- SEO Optimization Sprint -->
+                <div class="card-hover bg-dark-card p-8 rounded-2xl border border-gray-800 fade-in flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2 font-display">SEO Optimization Sprint</h3>
+                    <p class="text-3xl font-bold text-primary mb-4">$2,000</p>
+                    <p class="text-gray-400 mb-6">Boost your Google rankings and organic traffic fast.</p>
+                    <ul class="space-y-3 text-gray-400 grow">
+                        <li class="flex items-center">✓ Full technical & on-page SEO audit</li>
+                        <li class="flex items-center">✓ Keyword research & strategy for 10–20 pages</li>
+                        <li class="flex items-center">✓ Meta tags, headings, & site speed fixes</li>
+                        <li class="flex items-center">✓ Final report and growth plan</li>
+                    </ul>
+                    <p class="text-sm text-primary/80 mt-6 font-semibold">Limited to 3 clients per month.</p>
+                </div>
+
+                <!-- Website Design & Redesign Sprint -->
+                <div class="card-hover bg-dark-card p-8 rounded-2xl border border-gray-800 fade-in flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2 font-display">Website Design & Redesign Sprint</h3>
+                    <p class="text-3xl font-bold text-primary mb-4">$2,000</p>
+                    <p class="text-gray-400 mb-6">A modern, high-converting website in days, not months.</p>
+                    <ul class="space-y-3 text-gray-400 grow">
+                        <li class="flex items-center">✓ Full redesign of homepage + up to 5 inner pages</li>
+                        <li class="flex items-center">✓ Mobile-first, responsive design</li>
+                        <li class="flex items-center">✓ Optimized for speed, UX, and conversions</li>
+                        <li class="flex items-center">✓ Final delivery ready to launch</li>
+                    </ul>
+                    <p class="text-sm text-primary/80 mt-6 font-semibold">One flat fee for a sales-ready website.</p>
+                </div>
+            </div>
+
+            <!-- Bundle Deals -->
+            <div class="text-center mb-12 fade-in">
+                <h3 class="text-3xl md:text-4xl font-bold mb-2 font-display">
+                    Maximize Your Impact. <span class="text-primary">Bundle & Save.</span>
+                </h3>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto">
+                    Combine our sprints for full-scale growth and save.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto fade-in">
+                <!-- Growth Bundle -->
+                <div
+                    class="bg-dark-card p-8 rounded-2xl border border-gray-800 hover:border-primary/50 transition-all duration-300">
+                    <div class="flex flex-col gap-3 md:flex-row md:justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold font-display">Growth Bundle</h4>
+                        <span class="bg-primary text-white text-sm font-semibold px-3 py-1 rounded-full">Save
+                            $500</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Black Friday Ads + SEO Sprint</p>
+                    <p class="text-4xl font-bold text-white">$3,500 <span
+                            class="text-lg font-normal text-gray-500 line-through">$4,000</span></p>
+                </div>
+
+                <!-- Full Impact Bundle -->
+                <div
+                    class="bg-dark-card p-8 rounded-2xl border-2 border-primary/80 hover:border-primary transition-all duration-300 relative shadow-lg shadow-primary/10">
+                    <div class="flex flex-col gap-3 md:flex-row md:justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold font-display">Full Impact Bundle</h4>
+                        <span class="bg-primary text-white text-sm font-semibold px-3 py-1 rounded-full">Save
+                            $1,000</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Black Friday Ads + SEO + Website Design</p>
+                    <p class="text-4xl font-bold text-white">$5,000 <span
+                            class="text-lg font-normal text-gray-500 line-through">$6,000</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-24 bg-dark-card">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">
+                    Why Choose <span class="text-primary">Our Agency</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    We're not just another agency. We're your growth partner.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+                <!-- Card 1: Done-for-you -->
+                <div class="p-8  border-gray-800 fade-in">
+                    <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Done-for-you services</h3>
+                    <p class="text-gray-400">We handle everything so you can focus on sales.</p>
+                </div>
+
+                <!-- Card 2: Results-focused -->
+                <div class="p-8  border-gray-800 fade-in">
+                    <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Results-focused</h3>
+                    <p class="text-gray-400">Every package is built to drive measurable revenue or traffic.</p>
+                </div>
+
+                <!-- Card 3: Flexible options -->
+                <div class="p-8  border-gray-800 fade-in">
+                    <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 4v5h5M20 20v-5h-5"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20 4l-1.5 1.5M4 20l1.5-1.5"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 11a8 8 0 0114.24-5.24M20 13a8 8 0 01-14.24 5.24"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Flexible options</h3>
+                    <p class="text-gray-400">One-off sprints with the option to negotiate ongoing retainers if you’re
+                        thrilled with the results.</p>
+                </div>
+
+                <!-- Card 4: Premium & exclusive -->
+                <div class="p-8  border-gray-800 fade-in">
+                    <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Premium & exclusive</h3>
+                    <p class="text-gray-400">Limited availability ensures quality and attention to detail.</p>
+                </div>
+            </div>
+
+            <div class="text-center fade-in">
+                <div class="flex flex-wrap items-center justify-center gap-20">
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/shopify.webp" alt="Shopify logo"
+                            class="w-8 h-8 md:w-16 md:h-16 object-contain" />
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/google-ads.webp" alt="Google Ads logo"
+                            class="w-8 h-8 md:w-16 md:h-16 object-contain" />
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/klaviyo.webp" alt="Klaviyo logo"
+                            class="w-8 h-8 md:w-16 md:h-16 object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-scarcity" class="py-24 bg-linear-to-b from-dark-card to-dark relative overflow-hidden">
+
+        <!-- Landscape Video -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover hidden landscape:block z-2 lazy-video" muted loop
+            playsinline preload="none" poster="./assets/chart-still.webp" data-src="./assets/chart.mp4">
+            <source data-src="./assets/chart-optimized.mp4" type="video/mp4">
+        </video>
+
+        <!-- Landscape Fallback Image (visible immediately) -->
+        <img src="./assets/chart-still.webp" alt="Growth chart background"
+            class="absolute top-0 left-0 w-full h-full object-cover landscape:block portrait:hidden z-1" loading="lazy">
+
+        <!-- Portrait Video -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover hidden portrait:block z-2 lazy-video" muted loop
+            playsinline preload="none" poster="./assets/chart-vertical-still.webp"
+            data-src="./assets/chart-vertical.mp4">
+            <source data-src="./assets/chart-vertical-optimized.mp4" type="video/mp4">
+        </video>
+
+        <!-- Portrait Fallback Image -->
+        <img src="./assets/chart-vertical-still.webp" alt="Growth chart background"
+            class="absolute top-0 left-0 w-full h-full object-cover portrait:block landscape:hidden z-1" loading="lazy">
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black/75 z-10"></div>
+
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-3xl mx-auto fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 font-display">
+                    We're Helping Businesses Secure Visibility <span class="text-primary">Before the Black Friday
+                        Rush</span>
+                </h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    Don't wait until your competitors take your spot.
+                </p>
+
+                <div class="bg-dark-card border-2 border-primary/30 rounded-2xl p-8 mb-8 inline-block">
+                    <div class="text-sm text-gray-400 mb-2 uppercase tracking-wider">Next Audit Slot Available In:</div>
+                    <div id="countdown" class="text-4xl md:text-5xl font-bold text-primary">
+                        <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span
+                            id="seconds">00</span>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-2 flex justify-around max-w-xs mx-auto">
+                        <span>DAYS</span>
+                        <span>HOURS</span>
+                        <span>MINS</span>
+                        <span>SECS</span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#contact"
+                        class="glow-button bg-primary text-white px-10 py-5 rounded-lg font-semibold text-xl inline-block">
+                        Book Your Free Audit Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">
+                    Frequently Asked <span class="text-primary">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Have questions? We've got answers. Here are some of the most common things clients ask.
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="bg-dark-card border border-gray-800 rounded-2xl fade-in overflow-hidden">
+                    <button class="w-full flex justify-between items-center text-left p-6 faq-trigger">
+                        <span class="text-lg font-semibold text-white">Can you handle smaller businesses?</span>
+                        <div class="w-6 h-6 shrink-0">
+                            <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300 ease-in-out"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content border-t border-gray-800">
+                        <p class="text-gray-400 px-6 py-6">
+                            Absolutely — our sprints are tailored to any size business.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-dark-card border border-gray-800 rounded-2xl fade-in overflow-hidden">
+                    <button class="w-full flex justify-between items-center text-left p-6 faq-trigger">
+                        <span class="text-lg font-semibold text-white">How fast will I see results?</span>
+                        <div class="w-6 h-6 shrink-0">
+                            <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300 ease-in-out"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content border-t border-gray-800">
+                        <p class="text-gray-400 px-6 py-6">
+                            Ads deliver immediate results within 7 days. SEO and website improvements show growth
+                            quickly, with full
+                            traffic potential over the following weeks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-dark-card border border-gray-800 rounded-2xl fade-in overflow-hidden">
+                    <button class="w-full flex justify-between items-center text-left p-6 faq-trigger">
+                        <span class="text-lg font-semibold text-white">Can I switch to a monthly retainer?</span>
+                        <div class="w-6 h-6 shrink-0">
+                            <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300 ease-in-out"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content border-t border-gray-800">
+                        <p class="text-gray-400 px-6 py-6">
+                            Yes! If you’re satisfied with our work, we can discuss ongoing growth retainers or long-term
+                            campaigns
+                            after your sprint.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-dark-card border border-gray-800 rounded-2xl fade-in overflow-hidden">
+                    <button class="w-full flex justify-between items-center text-left p-6 faq-trigger">
+                        <span class="text-lg font-semibold text-white">Are ad spend and other costs included?</span>
+                        <div class="w-6 h-6 shrink-0">
+                            <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300 ease-in-out"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content border-t border-gray-800">
+                        <p class="text-gray-400 px-6 py-6">
+                            No — all packages are service-only. You maintain control over ad spend and any third-party
+                            costs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">
+                        Get Your <span class="text-primary">Free Mini Report</span>
+                    </h2>
+                    <p class="text-xl text-gray-400">
+                        We'll send you a free mini report showing how many customers you're missing right now.
+                    </p>
+                </div>
+
+                <div class="bg-dark-card p-8 md:p-12 rounded-2xl border border-gray-800 fade-in">
+                    <form id="audit-form" name="audit-form" class="space-y-6" method="POST" data-netlify="true"
+                        netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="audit-form" />
+                        <p hidden aria-hidden="true"><label>Don’t fill this: <input name="bot-field"
+                                    autocomplete="off" /></label></p>
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition text-white"
+                                placeholder="John Doe" />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition text-white"
+                                placeholder="john@example.com" />
+                        </div>
+
+                        <div>
+                            <label for="website" class="block text-sm font-semibold mb-2">Website URL</label>
+                            <input type="url" id="website" name="website" required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition text-white"
+                                placeholder="https://yourstore.com" />
+                        </div>
+
+                        <button type="submit"
+                            class="glow-button w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">
+                            Get My Free Mini Report
+                        </button>
+
+                        <div id="form-success"
+                            class="hidden bg-green-500/20 border border-green-500 text-green-400 p-4 rounded-lg text-center">
+                            Thank you! We'll send your free report within 24 hours.
+                        </div>
+                        <div id="form-error"
+                            class="hidden bg-red-500/20 border border-red-500 text-red-400 p-4 rounded-lg text-center">
+                            An error occured. Please try again!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-card border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                    <img src="./assets/logo-100.webp" alt="logo" class="w-8 h-8" />
+                    <span class="text-xl font-bold">The Mishakin Group</span>
+                </div>
+
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="/src/terms.html" class="text-gray-400 hover:text-white transition">Terms</a>
+                    <a href="/src/privacy.html" class="text-gray-400 hover:text-white transition">Privacy</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 text-gray-500 text-sm">
+                &copy; 2025 The Mishakin Group. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            mobileOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMenu.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                closeMobileMenu();
+            }
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+
+        const testimonials = document.querySelectorAll('.testimonial');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+        let testimonialTimer;
+        let isPaused = false;
+
+        function showTestimonial(index) {
+            testimonials.forEach(t => t.classList.remove('active'));
+            testimonialDots.forEach(d => d.classList.remove('bg-primary'));
+            testimonialDots.forEach(d => d.classList.add('bg-gray-600'));
+
+            testimonials[index].classList.add('active');
+            testimonialDots[index].classList.add('bg-primary');
+            testimonialDots[index].classList.remove('bg-gray-600');
+            currentTestimonial = index;
+        }
+
+        function nextTestimonial() {
+            if (!isPaused) {
+                const next = (currentTestimonial + 1) % testimonials.length;
+                showTestimonial(next);
+            }
+        }
+
+        function startTestimonialTimer() {
+            testimonialTimer = setInterval(nextTestimonial, 5000);
+        }
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+                clearInterval(testimonialTimer);
+                startTestimonialTimer();
+            });
+        });
+
+        const testimonialContainer = document.getElementById('testimonial-container');
+        testimonialContainer.addEventListener('mouseenter', () => {
+            isPaused = true;
+        });
+
+        testimonialContainer.addEventListener('mouseleave', () => {
+            isPaused = false;
+        });
+
+        startTestimonialTimer();
+
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 2);
+        targetDate.setHours(targetDate.getHours() + 14);
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate.getTime() - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.getElementById('countdown').innerHTML = '<span class="text-2xl">Slot Available Now!</span>';
+            }
+        }
+
+        updateCountdown();
+        const countdownTimer = setInterval(updateCountdown, 1000);
+
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavigation() {
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavigation);
+
+        const form = document.getElementById('audit-form');
+        const formSuccess = document.getElementById('form-success');
+        const formError = document.getElementById('form-error');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    formSuccess.classList.remove('hidden');
+                    form.reset();
+
+                    setTimeout(() => {
+                        formSuccess.classList.add('hidden');
+                    }, 5000);
+                } else {
+                    // Handle error
+                    formError.classList.remove('hidden');
+                    setTimeout(() => {
+                        formError.classList.add('hidden');
+                    }, 5000);
+
+                    console.error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionContainer = document.getElementById('services-accordion');
+            if (!accordionContainer) return;
+
+            const accordionTriggers = accordionContainer.querySelectorAll('[data-toggle="accordion"]');
+
+            accordionTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const parentCard = this.closest('.card-hover');
+                    const content = parentCard.querySelector('.accordion-content');
+                    const arrow = this.querySelector('.arrow-icon');
+                    const isCurrentlyOpen = content.classList.contains('open');
+
+                    // Close all other open accordions first
+                    accordionContainer.querySelectorAll('.accordion-content.open').forEach(openContent => {
+                        // Check if it's not the one we're about to open
+                        if (openContent !== content) {
+                            openContent.classList.remove('open');
+                            const otherArrow = openContent.closest('.card-hover').querySelector('.arrow-icon');
+                            if (otherArrow) {
+                                otherArrow.classList.remove('open');
+                            }
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    if (!isCurrentlyOpen) {
+                        content.classList.add('open');
+                        arrow.classList.add('open');
+                    } else {
+                        content.classList.remove('open');
+                        arrow.classList.remove('open');
+                    }
+                });
+            });
+        });
+
+        const header = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('bg-black/20', 'backdrop-blur-lg');
+            } else {
+                header.classList.remove('bg-black/20', 'backdrop-blur-lg');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // --- FAQ Accordion Script ---
+            const faqAccordion = document.getElementById('faq-accordion');
+            if (faqAccordion) {
+                const faqTriggers = faqAccordion.querySelectorAll('.faq-trigger');
+
+                faqTriggers.forEach(trigger => {
+                    trigger.addEventListener('click', function () {
+                        const content = this.nextElementSibling;
+                        const icon = this.querySelector('.faq-icon');
+                        const isCurrentlyOpen = content.classList.contains('open');
+
+                        // Optional: Close all other FAQs first
+                        faqAccordion.querySelectorAll('.faq-content.open').forEach(openContent => {
+                            if (openContent !== content) {
+                                openContent.classList.remove('open');
+                                const otherIcon = openContent.previousElementSibling.querySelector('.faq-icon');
+                                if (otherIcon) {
+                                    otherIcon.classList.remove('open');
+                                }
+                            }
+                        });
+
+                        // Toggle the clicked FAQ
+                        if (isCurrentlyOpen) {
+                            content.classList.remove('open');
+                            icon.classList.remove('open');
+                        } else {
+                            content.classList.add('open');
+                            icon.classList.add('open');
+                        }
+                    });
+                });
+            }
+
+            const serviceTabsContainer = document.getElementById('service-tabs');
+            const serviceTabs = document.querySelectorAll('.service-tab');
+            const servicePanels = document.querySelectorAll('.service-panel');
+
+            if (serviceTabsContainer) {
+                serviceTabsContainer.addEventListener('click', function (e) {
+                    const clickedTab = e.target.closest('.service-tab');
+                    if (!clickedTab) return;
+
+                    e.preventDefault();
+
+                    const targetId = clickedTab.getAttribute('data-target');
+                    const targetPanel = document.getElementById(targetId);
+                    const isCurrentlyActive = clickedTab.classList.contains('active');
+
+                    // --- Logic for Mobile (Accordion Behavior) ---
+                    if (window.innerWidth < 768) {
+                        // First, close all tabs and panels
+                        serviceTabs.forEach(tab => tab.classList.remove('active'));
+                        servicePanels.forEach(panel => panel.classList.remove('active'));
+
+                        // If the clicked tab wasn't the active one, open it
+                        if (!isCurrentlyActive) {
+                            clickedTab.classList.add('active');
+                            targetPanel.classList.add('active');
+                        }
+                    }
+                    // --- Logic for Desktop (Tab Behavior) ---
+                    else {
+                        // Remove active state from all tabs and panels
+                        serviceTabs.forEach(tab => tab.classList.remove('active'));
+                        servicePanels.forEach(panel => panel.classList.remove('active'));
+
+                        // Apply active state to the clicked tab and its target panel
+                        clickedTab.classList.add('active');
+                        targetPanel.classList.add('active');
+                    }
+                });
+            }
+        });
+
+        // Optional: Add a resize listener to reset state if window is resized across breakpoint
+        let currentWindowWidth = window.innerWidth;
+        window.addEventListener('resize', () => {
+            if (window.innerWidth !== currentWindowWidth) {
+                // If resizing crosses the 768px breakpoint, reset to the default state
+                if ((currentWindowWidth < 768 && window.innerWidth >= 768) || (currentWindowWidth >= 768 && window.innerWidth < 768)) {
+                    serviceTabs.forEach((tab, index) => {
+                        const panel = document.getElementById(tab.getAttribute('data-target'));
+                        if (index === 0) {
+                            tab.classList.add('active');
+                            panel.classList.add('active');
+                        } else {
+                            tab.classList.remove('active');
+                            panel.classList.remove('active');
+                        }
+                    });
+                }
+                currentWindowWidth = window.innerWidth;
+            }
+        });
+
+        // Lazy load videos after page loads
+        function lazyLoadVideos() {
+            const videos = document.querySelectorAll('.lazy-video');
+
+            // Check if we're on mobile and have reduced data preference
+            const isSlowConnection = navigator.connection &&
+                (navigator.connection.effectiveType === 'slow-2g' ||
+                    navigator.connection.effectiveType === '2g' ||
+                    navigator.connection.saveData);
+
+            if (isSlowConnection) {
+                // Don't load videos on slow connections
+                return;
+            }
+
+            videos.forEach(video => {
+                // Check if video matches current orientation
+                const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+                const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+                const isLandscapeVideo = video.classList.contains('landscape:block');
+                const isPortraitVideo = video.classList.contains('portrait:block');
+
+                // Only load the video that matches current orientation
+                if ((isLandscape && isLandscapeVideo) || (isPortrait && isPortraitVideo)) {
+                    const sources = video.querySelectorAll('source');
+                    sources.forEach(source => {
+                        if (source.dataset.src) {
+                            source.src = source.dataset.src;
+                        }
+                    });
+
+                    if (video.dataset.src) {
+                        video.src = video.dataset.src;
+                    }
+
+                    video.load();
+
+                    // Play video once it's loaded enough
+                    video.addEventListener('canplaythrough', () => {
+                        video.play().catch(e => {
+                            console.log('Video autoplay prevented:', e);
+                        });
+                    }, { once: true });
+                }
+            });
+        }
+
+        // Load videos after page is fully loaded
+        if (document.readyState === 'complete') {
+            setTimeout(lazyLoadVideos, 1000); // 1 second delay
+        } else {
+            window.addEventListener('load', () => {
+                setTimeout(lazyLoadVideos, 1000);
+            });
+        }
+
+        // Handle orientation changes
+        window.addEventListener('orientationchange', () => {
+            setTimeout(lazyLoadVideos, 500);
+        });
+    </script>
+</body>
+
+</html>
